@@ -29,6 +29,42 @@ class ViewController: UIViewController {
         
         answerLabel.text = "\(answer)"
     }
+    @IBAction func whenSubtractButtonPressed(_ sender: UIButton){
+        
+        let data1 = firstNumberTextField.text!
+        let data2 = secondNumberTextField.text!
+        let num1 = Int(data1)!
+        let num2 = Int(data2)!
+        let answer = num1 - num2
+        
+        operationLabel.text = "-"
+        
+        answerLabel.text = "\(answer)"
+    }
+    @IBAction func whenDivideButtonPressed(_ sender: UIButton){
+        
+        let data1 = firstNumberTextField.text!
+        let data2 = secondNumberTextField.text!
+        let num1 = Int(data1)!
+        let num2 = Int(data2)!
+        let answer = num1 / num2
+        
+        operationLabel.text = "/"
+        
+        answerLabel.text = "\(answer)"
+    }
+    @IBAction func whenAddMultiplyPressed(_ sender: UIButton){
+        
+        let data1 = firstNumberTextField.text!
+        let data2 = secondNumberTextField.text!
+        let num1 = Int(data1)!
+        let num2 = Int(data2)!
+        let answer = num1 * num2
+        
+        operationLabel.text = "*"
+        
+        answerLabel.text = "\(answer)"
+    }
 
 }
 
